@@ -10,6 +10,7 @@ export default function Home() {
   });
 
   const [backgroundColor, setBackgroundColor] = useState('#ff0000');
+  const lista = Array.from({ length: 100 }, (_, index) => index);
 
   return (
     <div className="grid grid-cols-12 gap-2">
@@ -69,7 +70,7 @@ export default function Home() {
         style={{ backgroundColor }}
         className="col-span-10 break-all p-4 text-6xl uppercase font-extrabold text-white"
       >
-        {[...Array(100).keys()].map((element) => (
+        {lista.map((element) => (
           <span key={element}>
             {formdata.name} - {formdata.title}&nbsp;
           </span>
