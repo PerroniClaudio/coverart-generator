@@ -13,7 +13,7 @@ export default function Home() {
   const lista = Array.from({ length: 100 }, (_, index) => index);
 
   return (
-    <div className="grid grid-cols-12 gap-2">
+    <div className="grid grid-cols-12 gap-2 antialiased">
       <aside className="self-start sticky top-0 col-span-2 flex flex-col gap-4 p-2">
         <div className="flex flex-col gap-1">
           <label htmlFor="name">Artista</label>
